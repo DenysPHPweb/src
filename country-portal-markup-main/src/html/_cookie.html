@@ -1,0 +1,14 @@
+<div x-data="createCookiesEuBanner()" x-show="show === true" class="fixed bottom-4 right-1 left-1 lg:right-4 lg:left-4 p-4 bg-white border-t-2 shadow-lg">
+    <h2 class="text-lg lg:text-xl mb-4 block font-bold">Cookie Policy</h2>
+    <div class="lg:flex lg:space-x-5">
+        <p class="mb-5 text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus condimentum libero. Nulla tempus
+            metus sit amet
+            sagittis tempus. Donec maximus odio nibh, ut congue ante dictum suscipit.
+        </p>
+
+        <button @click.prevent="hideBanner()" class="w-full lg:w-48 px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-gray-700 mr-2 mb-5 text-lg focus:outline-none">
+            I agree
+        </button>
+    </div>
+</div>

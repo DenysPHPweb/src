@@ -1,0 +1,43 @@
+<section class="text-gray-600 body-font">
+
+
+    <div x-data="{ openTab: 1 }" class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
+        <div class="flex mx-auto flex-wrap mb-20">
+            <a @click="openTab = 1"
+                :class="openTab === 1 ? 'bg-gray-100 border-green-500 text-green-500 tracking-wider rounded-t' : 'border-gray-200 hover:text-gray-900 tracking-wider'"
+                class="sm:px-6 cursor-pointer py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none">
+                History
+            </a>
+            <a @click="openTab = 2"
+                :class="openTab === 2 ? 'bg-gray-100 border-green-500 text-green-500 tracking-wider rounded-t' : 'border-gray-200 hover:text-gray-900 tracking-wider'"
+                class="sm:px-6 cursor-pointer py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none">
+                Culture
+            </a>
+            <a @click="openTab = 3"
+                :class="openTab === 3 ? 'bg-gray-100 border-green-500 text-green-500 tracking-wider rounded-t' : 'border-gray-200 hover:text-gray-900 tracking-wider'"
+                class="sm:px-6 cursor-pointer py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none">
+                Economy
+            </a>
+
+        </div>
+
+        <div class="flex flex-col w-full">
+            <div x-show="openTab === 1">
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">1 Whatever cardigan tote bag tumblr hexagon
+                    brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard
+                    of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            </div>
+            <div x-show="openTab === 2">
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">2 Whatever cardigan tote bag tumblr hexagon
+                    brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard
+                    of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            </div>
+            <div x-show="openTab === 3">
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">3 Whatever cardigan tote bag tumblr hexagon
+                    brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard
+                    of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
